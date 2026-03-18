@@ -1,0 +1,11 @@
+{
+    "name": "rpn-calculator-34c",
+    "version": "0.1.0",
+    "title": "RPN Calculator 34C",
+    "author": "0n0w1c",
+    "factorio_version": "2.0",
+    "description": "Inspired by the HP 34C, a reverse polish notation calculator",
+    "dependencies": [
+        "base >= 2.0"
+    ]
+}
