@@ -179,6 +179,7 @@ Result: **3**
 ## Is there a backspace key?
 
 Yes:
+
 **←**
 
 **Backspace** removes the last typed digit from the current entry.
