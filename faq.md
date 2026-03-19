@@ -178,31 +178,12 @@ Result: **3**
 
 ## Is there a backspace key?
 
-Yes.
+Yes:
+**←**
 
 **Backspace** removes the last typed digit from the current entry.
 
 It only edits the current number entry; it does not operate on the full stack.
-
----
-
-## Can I copy values from history back into X?
-
-No.
-
-The history panel is **display-only**. It shows recent operations and results for reference, but history entries are not clickable.
-
----
-
-## What is the history panel for?
-
-The history panel shows recent calculator activity such as:
-
-- entered values
-- operations performed
-- results
-
-It is intended as a visual reference only.
 
 ---
 
