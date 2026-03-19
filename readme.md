@@ -15,3 +15,5 @@ Reverse polish notation calculator inspired by classic HP-style handheld calcula
 - Math functions: **%, 1/x, √x**
 - Stack display
 - History panel for reference
+
+More information is available in the [FAQ](https://mods.factorio.com/mod/rpn-calculator-34c/faq)
