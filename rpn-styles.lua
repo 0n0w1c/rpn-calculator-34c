@@ -56,8 +56,6 @@ default_gui.rpn_button_style_light_wide = {
     width = 104
 }
 
-
-
 default_gui.rpn_display_frame_style = {
     type = "frame_style",
     parent = "inside_shallow_frame_with_padding",
@@ -86,13 +84,6 @@ data:extend({
         filename = "__rpn-calculator-34c__/graphics/calculator.png",
         width = 64,
         height = 64
-    },
-    {
-        type = "sprite",
-        name = "sprite_rpn_backspace",
-        filename = "__rpn-calculator-34c__/graphics/backspace.png",
-        width = 50,
-        height = 50
     },
     {
         type = "sprite",

@@ -151,13 +151,6 @@ local function pop_stack(player)
     return table.remove(state.stack)
 end
 
-local function peek_stack(player, depth)
-    local state = get_state(player)
-    local index = #state.stack - (depth or 0)
-    if index < 1 then return nil end
-    return state.stack[index]
-end
-
 local function set_stack_display(player)
     local root = get_gui_root(player)
     if not (root and root.rpn) then return end
@@ -223,18 +216,18 @@ function show_calculator(player)
             direction = "horizontal",
             style = "rpn_display_frame_style"
         })
-        display_frame.style.width = 236
+        display_frame.style.width = 212
         local display_led = display_frame.add({
             type = "label",
             name = "rpn_display_led",
             caption = "",
             style = "rpn_led_label_style"
         })
-        display_led.style.width = 214
+        display_led.style.width = 196
 
         local row1 = col1.add({ type = "flow", name = "rpn_col1_row1", direction = "horizontal" })
-        row1.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "", tooltip = "Backspace", name = "rpn_button_BS" }).sprite =
-        "sprite_rpn_backspace"
+        row1.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "←", tooltip = "Backspace", name = "rpn_button_BS" }).sprite =
+        "sprite_rpn_dark"
         row1.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "C", tooltip = "Clear all", name = "rpn_button_C" }).sprite =
         "sprite_rpn_dark"
         row1.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "CLX", tooltip = "Clear X", name = "rpn_button_CLX" }).sprite =
@@ -318,7 +311,7 @@ function show_calculator(player)
         stack_frame.style.right_padding = 8
         stack_frame.style.bottom_padding = 6
         stack_frame.style.left_padding = 8
-        stack_frame.add({ type = "label", caption = "Stack", name = "rpn_stack_title" })
+        stack_frame.add({ type = "label", caption = "Stack:", name = "rpn_stack_title" })
 
         local stack_table = stack_frame.add({ type = "table", name = "rpn_stack_table", column_count = 2 })
         stack_table.style.horizontal_spacing = 10
@@ -344,12 +337,12 @@ function show_calculator(player)
             style = "inside_shallow_frame_with_padding"
         })
         history_frame.style.width = 200
-        history_frame.style.height = 236
+        history_frame.style.height = 280
         history_frame.style.top_padding = 6
         history_frame.style.right_padding = 8
         history_frame.style.bottom_padding = 8
         history_frame.style.left_padding = 8
-        history_frame.add({ type = "label", caption = "History", name = "rpn_history_title" })
+        history_frame.add({ type = "label", caption = "History:", name = "rpn_history_title" })
         local history = history_frame.add({ type = "scroll-pane", name = "rpn_history_pane" })
         history.style.horizontally_stretchable = true
         history.style.vertically_stretchable = true
