@@ -260,7 +260,7 @@ function show_calculator(player)
             tooltip = "Enter",
             name = "rpn_button_ENT"
         })
-        row2.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "+/-", tooltip = "Change sign", name = "rpn_button_CHS" }).sprite =
+        row2.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "%", tooltip = "Percent of Y", name = "rpn_button_PERCENT" }).sprite =
         "sprite_rpn_dark"
         row2.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "1/x", tooltip = "Reciprocal", name = "rpn_button_INV" }).sprite =
         "sprite_rpn_dark"
@@ -302,7 +302,7 @@ function show_calculator(player)
         "sprite_rpn_light"
         row6.add({ type = "sprite-button", style = "rpn_button_style_light", caption = ".", tooltip = "Decimal point", name = "rpn_button_DOT" }).sprite =
         "sprite_rpn_light"
-        row6.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "%", tooltip = "Percent of Y", name = "rpn_button_PERCENT" }).sprite =
+        row6.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "+/-", tooltip = "Change sign", name = "rpn_button_CHS" }).sprite =
         "sprite_rpn_dark"
 
         local col2 = table.add({ type = "flow", name = "rpn_table_col2", direction = "vertical" })
