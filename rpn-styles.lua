@@ -63,7 +63,7 @@ default_gui.rpn_display_frame_style = {
     right_padding = 10,
     bottom_padding = 4,
     left_padding = 10,
-    width = 236,
+    width = 212,
     height = 36
 }
 
@@ -76,7 +76,7 @@ default_gui.rpn_led_label_style = {
     vertical_align = "center",
     horizontal_align = "right"
 }
--- sprites
+
 data:extend({
     {
         type = "sprite",

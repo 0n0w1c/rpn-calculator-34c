@@ -223,7 +223,7 @@ function show_calculator(player)
             caption = "",
             style = "rpn_led_label_style"
         })
-        display_led.style.width = 196
+        display_led.style.width = 192
 
         local row1 = col1.add({ type = "flow", name = "rpn_col1_row1", direction = "horizontal" })
         row1.add({ type = "sprite-button", style = "rpn_button_style_dark", caption = "←", tooltip = "Backspace", name = "rpn_button_BS" }).sprite =
@@ -338,7 +338,7 @@ function show_calculator(player)
         })
         history_frame.style.width = 200
         history_frame.style.height = 280
-        history_frame.style.top_padding = 6
+        history_frame.style.top_padding = 8
         history_frame.style.right_padding = 8
         history_frame.style.bottom_padding = 8
         history_frame.style.left_padding = 8
@@ -346,8 +346,8 @@ function show_calculator(player)
         local history = history_frame.add({ type = "scroll-pane", name = "rpn_history_pane" })
         history.style.horizontally_stretchable = true
         history.style.vertically_stretchable = true
-        history.style.minimal_height = 188
-        history.style.maximal_height = 188
+        history.style.minimal_height = 250
+        history.style.maximal_height = 250
         history.add({ type = "table", caption = "", name = "rpn_result_table", column_count = 1 })
 
         storage.gui_position = storage.gui_position or {}
