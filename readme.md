@@ -16,4 +16,6 @@ Reverse polish notation calculator inspired by classic HP-style handheld calcula
 - Stack display
 - History panel for reference
 
-More information is available in the [FAQ](https://mods.factorio.com/mod/rpn-calculator-34c/faq).
+More information is available in the [FAQ](https://mods.factorio.com/mod/rpn-calculator-34c/faq).  
+
+Forked from [Calculator UI](https://mods.factorio.com/mod/calculator-ui) by SoHWichu.  
